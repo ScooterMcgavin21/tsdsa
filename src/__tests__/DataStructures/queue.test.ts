@@ -1,4 +1,4 @@
-import { Queue } from '../queue/queue';
+import { Queue } from '../../DataStructures/queue/queue';
 
 describe('queue', () => {
     const max = 5;
@@ -38,7 +38,7 @@ describe('queue', () => {
     test('is torn down until it is empty, returning values 1, 2, 3, 4, 5', () => {
         expect(queue.isEmpty()).toBe(false);
         expect(queue.isFull()).toBe(true);
-        
+
         expect(queue.dequeue()).toBe(1);
         expect(queue.dequeue()).toBe(2);
         expect(queue.dequeue()).toBe(3);

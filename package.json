@@ -6,7 +6,9 @@
 	"scripts": {
 		"build:dev": "tsc --watch",
 		"start:dev": "nodemon dist/index.js",
-		"start": "concurrently \"npm:build:dev\" \"npm:start:dev\""
+		"start": "concurrently \"npm:build:dev\" \"npm:start:dev\"",
+		"test": "jest --coverage",
+		"clean": "rm -rf ./dist"
 	},
 	"keywords": [],
 	"author": "",
@@ -16,7 +18,7 @@
 		"concurrently": "^5.0.0",
 		"jest": "^24.9.0",
 		"nodemon": "^1.19.4",
-		"ts-jest": "^24.2.0",
+		"ts-jest": "^24.3.0",
 		"typescript": "^3.7.2"
 	}
 }
